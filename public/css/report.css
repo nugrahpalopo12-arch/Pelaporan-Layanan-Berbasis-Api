@@ -1,0 +1,181 @@
+body{
+  background:#f7faff;
+  padding:30px;
+  font-family: Inter, Arial, sans-serif;
+}
+
+form{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  margin-bottom:25px;
+}
+
+form input[name="q"]{
+  width:250px;
+  padding:10px 14px;
+  border:1px solid #cdd7e3;
+  border-radius:8px;
+  font-size:14px;
+}
+form button{
+  padding:10px 18px;
+  background:#2563eb;
+  border:none;
+  color:#fff;
+  border-radius:8px;
+  cursor:pointer;
+  transition:.2s;
+}
+form button:hover{
+  background:#1e4ac1;
+}
+form select {
+  width: 200px;
+  padding: 10px 14px;
+  border: 1px solid #cdd7e3;
+  border-radius: 8px;
+  font-size: 14px;
+  background: #fff;
+  color: #333;
+  cursor: pointer;
+  transition: .2s;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23555' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+}
+
+form select:hover {
+  border-color: #93b3ff;
+}
+
+form select:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, .25);
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+  background:#fff;
+  border-radius:10px;
+  overflow:hidden;
+  box-shadow:0 4px 16px rgba(0,0,0,0.06);
+}
+
+table thead{
+  background:#e8f0ff;
+}
+table th, table td{
+  padding:12px 14px;
+  text-align:left;
+  font-size:14px;
+  border-bottom:1px solid #eef3fb;
+}
+table tbody tr:nth-child(even){
+  background:#fafcff;
+}
+table tbody tr:hover{
+  background:#f0f7ff;
+}
+
+td:nth-child(4){
+  font-weight:600;
+}
+td:nth-child(4):contains("new"),
+td:nth-child(4):contains("Baru"){
+  color:#2563eb;
+}
+td:nth-child(4):contains("in_progress"),
+td:nth-child(4):contains("Sedang Proses"){
+  color:#d97706;
+}
+td:nth-child(4):contains("resolved"),
+td:nth-child(4):contains("Selesai"){
+  color:#059669;
+}
+td:nth-child(4):contains("rejected"),
+td:nth-child(4):contains("Ditolak"){
+  color:#dc2626;
+}
+
+.pagination{
+  margin-top:25px;
+  text-align:center;
+}
+.pagination a{
+  display:inline-block;
+  margin:0 4px;
+  padding:8px 14px;
+  border:1px solid #d0d8e7;
+  border-radius:8px;
+  text-decoration:none;
+  color:#2563eb;
+  font-size:14px;
+  transition:.2s;
+}
+.pagination a:hover{
+  background:#2563eb;
+  color:#fff;
+}
+.pagination .active{
+  background:#2563eb;
+  color:#fff;
+  border-color:#2563eb;
+}
+
+@media(max-width:600px){
+  form{
+    flex-direction:column;
+    align-items:center;
+  }
+  form input[name="q"]{
+    width:100%;
+  }
+  table th, table td{
+    padding:10px;
+    font-size:13px;
+  }
+}
+
+.back-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: #ffffff;
+  color: #4169e1;
+  border: 1px solid #d7dcef;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.25s ease;
+}
+
+.btn-detail {
+  display: inline-block;
+  padding: 6px 14px;
+  font-size: 13px;
+  border-radius: 8px;
+  background: #e0ecff;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+  transition: .2s;
+}
+
+.btn-detail:hover {
+  background: #2563eb;
+  color: #fff;
+}
+
+.back-btn:hover {
+  background: #4169e1;
+  color: #fff;
+}

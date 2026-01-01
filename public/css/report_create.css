@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  padding: 60px 15px;
+  min-height: 100vh;
+  font-family: 'Inter', Arial, sans-serif;
+  background: #f5f7fb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.back-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: #ffffff;
+  color: #4169e1;
+  border: 1px solid #d7dcef;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.25s ease;
+}
+
+.back-btn:hover {
+  background: #4169e1;
+  color: #fff;
+}
+
+form {
+  width: 100%;
+  max-width: 600px;
+  background: #fff;
+  padding: 36px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+label {
+  font-weight: 600;
+  font-size: 15px;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+input[type="text"],
+input[type="file"],
+select,
+textarea {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1.8px solid #d9deec;
+  background: #f9faff;
+  font-size: 15px;
+  color: #333;
+  transition: border-color 0.25s, box-shadow 0.25s, background 0.25s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #4169e1;
+  box-shadow: 0 0 0 3px rgba(65, 105, 225, 0.25);
+  background: #fff;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+
+input[type="file"] {
+  padding: 10px;
+  background: #f9faff;
+}
+
+button[type="submit"] {
+  background: #4169e1;
+  color: #fff;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+
+button[type="submit"]:hover {
+  background: #3458c0;
+}
+
+.alert {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+  padding: 14px 16px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.alert.error {
+  background: #ffeaea;
+  color: #c0392b;
+  border: 1px solid #f5b7b1;
+}
+
+.alert.success {
+  background: #eafaf1;
+  color: #1e8449;
+  border: 1px solid #a9dfbf;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #9aa3b8;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 40px 10px;
+  }
+  form {
+    padding: 24px;
+  }
+  .back-btn {
+    top: 15px;
+    left: 15px;
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
