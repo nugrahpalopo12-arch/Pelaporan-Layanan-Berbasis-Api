@@ -46,11 +46,15 @@ Sistem menggunakan arsitektur **Client–Server**:
 ---
 
 ## 📂 Struktur Folder API
-Folder api/ berisi file backend berikut:
+
+Folder `api/` berisi file backend berikut:
+
+```bash
 api/
-├── login.php    → Autentikasi user
-├── regis.php    → Registrasi user
-└── repost.php   → CRUD data (GET, POST, PUT, DELETE)
+├── login.php    # Autentikasi user
+├── regis.php    # Registrasi user
+└── repost.php   # CRUD data (GET, POST, PUT, DELETE)
+
 
 ---
 
@@ -113,4 +117,5 @@ PHP
 - Apache (XAMPP)
 - Postman
 - Git & GitHub
+
 
